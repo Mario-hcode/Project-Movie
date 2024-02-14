@@ -1,0 +1,228 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Great+Vibes&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300&family=Roboto:wght@100&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cookie&family=Great+Vibes&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300&family=Roboto:wght@100&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Cookie&family=Great+Vibes&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand&family=Roboto:wght@100&family=Satisfy&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   background-color: black;
+   color: white;
+}
+
+.heac {
+    background-image: url(/imagenes-gradiant/netflix-backgorund.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.head {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 60px;
+    /* Otras propiedades de estilo para .head si es necesario */
+}
+
+.box-title-placeholder {
+
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 60px;
+}
+
+
+.header-1{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title{
+text-align: center;
+margin-top: 30px;
+font-size: 35px;
+border-bottom: 20px solid transparent;
+font-family: "Montserrat", sans-serif; 
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+
+
+}
+
+.entrada{
+    background-color: white;
+    margin: auto;
+    width: 700px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.buscar{
+   background-color: blueviolet; 
+   color: white;
+   font-weight: bold;
+   width: 90px;
+   height: 50px;
+   margin-left: 5px;
+   border-radius: 10px;
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 0px;
+   font-size: 15px;
+   margin: 0;
+}
+
+
+.caja-peliculas{
+    margin: 50px;
+    display: grid;
+grid-template-columns: repeat(auto-fit,
+minmax( 
+250px,    
+1fr 
+)
+);
+gap: 22px;
+margin-top: 150px;
+}
+
+
+
+.text-1{
+text-align: center;
+font-family: "Montserrat", sans-serif; 
+margin-top: 10px;
+font-weight: 500;
+
+}
+
+.text-2{
+text-align: center;
+background-color: blueviolet;
+font-size: 14px;
+font-family: "Montserrat", sans-serif; 
+margin-top: 5px;
+}
+
+.movie-poster{
+    width: 100%;
+    height: 85%;
+border-radius: 10px;
+transition: 0.5s all ease-in-out;
+
+}
+
+
+.movie-poster:hover{
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.title-2{
+    font-size: 35px;
+    text-align: center;
+    margin: 40px;
+}
+
+/* esta parte es el contenedor principal y como podemos ver obedece llos hijos obedecen por completo lo que esta escrito en el contendor principal*/
+
+.container-image-effect{
+    display: flex;
+    height: 430px;
+    width: 900px;
+    margin: auto;
+}
+
+section .ome{
+width: 0;
+flex-grow: 1; /**/
+object-fit: cover; /*ayuda a ajustar una imagen segun las dimension del contendor sin la necesidad de distorcionarla */
+
+opacity: 0.8;
+transition: .5s ease;
+}
+
+section .ome:hover{
+    
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    cursor: pointer;
+}
+
+.box {
+margin-top: 300px;
+
+}
+
+.box-images {
+    display: flex;
+    height: 430px;
+    width: 900px;
+    margin: auto;
+    position: relative; /* Agregando posicionamiento relativo */
+    z-index: 49;
+}
+
+.TITLE {
+    position: absolute;
+    z-index: 50;
+    top: 20px; /* Ajusta según sea necesario */
+    left: 0; /* Ajusta según sea necesario */
+}
+
+
+.imagem {
+    
+width: 0;
+flex-grow: 1; /**/
+object-fit: cover; /*ayuda a ajustar una imagen segun las dimension del contendor sin la necesidad de distorcionarla */
+opacity: 0.8;
+}
+
+/*
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+margin: auto;
+}
+
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    cursor: pointer;
+    
+}*/
+
